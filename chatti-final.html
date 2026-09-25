@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- PREVIEW ONLY: set title + meta description in Yoast/RankMath on WordPress -->
+<title>Private Dining NYC | Muttch Lounge at Chatti, Midtown Manhattan</title>
+<meta name="description" content="Muttch Lounge at Chatti is a private dining and event venue in Midtown Manhattan for up to 70 seated or 100 standing guests. Corporate events, celebrations and restaurant buyouts in NYC.">
+</head>
+<body style="margin:0">
+
+<!-- ============================================================
+     MUTTCH LOUNGE — PRIVATE DINING LANDING PAGE  (v2)
+     Copy everything from here to "END MUTTCH LOUNGE" into an
+     Elementor HTML widget (full-width section, no padding).
+     All classes / IDs use the "mtl-" prefix and every rule is
+     scoped under #mtl-page, so nothing leaks into the theme.
+
+     PLACEHOLDER MEDIA: hero video (Mixkit) and photos (Pexels)
+     are free-licence stand-ins. Search "REPLACE" to swap them.
+     ============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+<style>
+/* Sansation: your own file first (works on chattinewyork.com), then an open-licence CDN copy (works anywhere, incl. local preview) */
+@font-face{font-family:"mtl-Sansation";font-weight:400;font-style:normal;font-display:swap;
+  src:url("https://www.chattinewyork.com/wp-content/uploads/2026/09/Sansation-Regular.ttf") format("truetype"),
+      url("https://cdn.jsdelivr.net/gh/google-fonts-bower/sansation-bower@master/Sansation-Regular.ttf") format("truetype")}
+@font-face{font-family:"mtl-Sansation";font-weight:400;font-style:italic;font-display:swap;
+  src:url("https://www.chattinewyork.com/wp-content/uploads/2026/09/Sansation-Italic.ttf") format("truetype"),
+      url("https://cdn.jsdelivr.net/gh/google-fonts-bower/sansation-bower@master/Sansation-Italic.ttf") format("truetype")}
+@font-face{font-family:"mtl-Sansation";font-weight:300;font-style:normal;font-display:swap;
+  src:url("https://cdn.jsdelivr.net/gh/google-fonts-bower/sansation-bower@master/Sansation-Light.ttf") format("truetype")}
+
+#mtl-page{
+  --mtl-copper:#BB7E62;
+  --mtl-copper-deep:#A85F3C;
+  --mtl-cream:#F6F1E6;
+  --mtl-sand:#F3EBDE;
+  --mtl-forest:#263C30;
+  --mtl-forest-deep:#1B2C23;
+  --mtl-ink:#1F2A24;
+  --mtl-body:#4E4E4F;
+  --mtl-line:rgba(38,60,48,.18);
+  --mtl-display:"mtl-Sansation","Hatton","Montserrat",Arial,sans-serif;
+  --mtl-sans:"Montserrat",Arial,Helvetica,sans-serif;
+  --mtl-wrap:1240px;
+  --mtl-gutter:clamp(20px,5vw,64px);
+  --mtl-ease:cubic-bezier(.22,.61,.36,1);
+  --mtl-ease-out:cubic-bezier(.16,1,.3,1);
+  background:var(--mtl-cream);
+  color:var(--mtl-body);
+  font-family:var(--mtl-sans);
+  font-size:16px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:clip;
+}
+#mtl-page *,#mtl-page *::before,#mtl-page *::after{box-sizing:border-box}
+#mtl-page h1,#mtl-page h2,#mtl-page h3,#mtl-page p,#mtl-page ul,#mtl-page ol,#mtl-page figure,#mtl-page blockquote{margin:0;padding:0}
+#mtl-page ul,#mtl-page ol{list-style:none}
+#mtl-page img,#mtl-page video{display:block;max-width:100%;height:auto;border:0}
+#mtl-page a{color:inherit;text-decoration:none}
+#mtl-page button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;cursor:pointer;text-transform:none;letter-spacing:inherit;box-shadow:none;border-radius:0}
+#mtl-page :focus-visible{outline:2px solid var(--mtl-copper);outline-offset:3px}
+
+/* ---------- shared ---------- */
+#mtl-page .mtl-wrap{width:100%;max-width:var(--mtl-wrap);margin:0 auto;padding:0 var(--mtl-gutter)}
+#mtl-page .mtl-h2{font-family:var(--mtl-display);font-weight:400;color:var(--mtl-ink);font-size:clamp(30px,4vw,52px);line-height:1.12;letter-spacing:-.005em}
+#mtl-page .mtl-kicker{font-family:var(--mtl-sans);font-style:italic;font-size:14px;letter-spacing:.14em;color:var(--mtl-copper);margin-bottom:18px}
+#mtl-page .mtl-lede{font-size:clamp(16px,1.3vw,18px);max-width:52ch;color:var(--mtl-body)}
+
+#mtl-page .mtl-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--mtl-sans);font-size:13px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;
+  padding:16px 30px;border:1px solid var(--mtl-copper);border-radius:0;
+  background:var(--mtl-copper);color:#fff;cursor:pointer;line-height:1;
+  transition:background .35s var(--mtl-ease),color .35s var(--mtl-ease),border-color .35s var(--mtl-ease);
+}
+#mtl-page .mtl-btn:hover{background:var(--mtl-copper-deep);border-color:var(--mtl-copper-deep);color:#fff}
+#mtl-page .mtl-btn-ghost{background:transparent;color:var(--mtl-ink);border-color:var(--mtl-ink)}
+#mtl-page .mtl-btn-ghost:hover{background:var(--mtl-ink);border-color:var(--mtl-ink);color:var(--mtl-cream)}
+#mtl-page .mtl-btn-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+#mtl-page .mtl-btn-light:hover{background:#fff;color:var(--mtl-forest);border-color:#fff}
+#mtl-page .mtl-btn-row{display:flex;flex-wrap:wrap;gap:14px}
+
+/* reveal helpers (JS adds .mtl-in) */
+#mtl-page .mtl-fade{opacity:0;transform:translateY(28px);transition:opacity 1s var(--mtl-ease),transform 1s var(--mtl-ease)}
+#mtl-page .mtl-fade.mtl-in{opacity:1;transform:none}
+#mtl-page .mtl-mask{overflow:hidden;clip-path:inset(0 0 100% 0);transition:clip-path 1.4s var(--mtl-ease)}
+#mtl-page .mtl-mask img{transform:scale(1.14);transition:transform 1.8s var(--mtl-ease)}
+#mtl-page .mtl-mask.mtl-in{clip-path:inset(0 0 0 0)}
+#mtl-page .mtl-mask.mtl-in img{transform:scale(1)}
+
+/* ---------- 1. hero (video + intro sequence) ---------- */
+#mtl-page .mtl-hero{position:relative;height:100vh;height:100svh;min-height:620px;overflow:hidden;background:var(--mtl-forest-deep);color:#fff}
+#mtl-page .mtl-hero-media{position:absolute;inset:-6% 0 0 0;will-change:transform}
+#mtl-page .mtl-hero-media video,#mtl-page .mtl-hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.14);transition:transform 3.2s var(--mtl-ease-out)}
+#mtl-page .mtl-hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(27,44,35,.6) 0%,rgba(27,44,35,.2) 40%,rgba(27,44,35,.86) 100%)}
+#mtl-page .mtl-veil{position:absolute;inset:0;z-index:3;background:var(--mtl-forest-deep);pointer-events:none;transition:opacity 1.6s var(--mtl-ease) .15s}
+#mtl-page .mtl-hero-inner{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;text-align:center;padding:0 var(--mtl-gutter) clamp(72px,12vh,128px);will-change:opacity,transform}
+#mtl-page .mtl-hero-brand{display:flex;flex-direction:column;align-items:center;margin-bottom:clamp(26px,5vh,46px);opacity:0;transform:translateY(16px);filter:blur(6px);transition:opacity 1.4s var(--mtl-ease) .9s,transform 1.4s var(--mtl-ease) .9s,filter 1.4s var(--mtl-ease) .9s}
+#mtl-page .mtl-hero-logo{width:clamp(180px,22vw,300px)}
+#mtl-page .mtl-hero-wordmark{font-family:var(--mtl-display);font-size:clamp(28px,3vw,40px);letter-spacing:.2em;text-transform:uppercase;color:var(--mtl-copper)}
+#mtl-page .mtl-hero-rule{display:block;height:1px;width:0;background:var(--mtl-copper);margin-top:22px;transition:width 1.4s var(--mtl-ease) 1.3s}
+#mtl-page .mtl-hero h1{font-family:var(--mtl-display);font-weight:400;font-size:clamp(34px,5.4vw,76px);line-height:1.06;letter-spacing:-.01em;color:#fff;margin-bottom:24px}
+#mtl-page .mtl-line{display:block;overflow:hidden;padding-bottom:.08em}
+#mtl-page .mtl-line > span{display:block;transform:translateY(105%);transition:transform 1.3s var(--mtl-ease) 1.2s}
+#mtl-page .mtl-line:nth-child(2) > span{transition-delay:1.36s}
+#mtl-page .mtl-hero-sub{max-width:46ch;font-size:clamp(15px,1.25vw,18px);color:rgba(255,255,255,.86);margin-bottom:36px;opacity:0;transition:opacity 1.2s var(--mtl-ease) 1.75s}
+#mtl-page .mtl-hero .mtl-btn-row{justify-content:center;opacity:0;transform:translateY(12px);transition:opacity 1.2s var(--mtl-ease) 1.95s,transform 1.2s var(--mtl-ease) 1.95s}
+#mtl-page .mtl-hero.mtl-loaded .mtl-veil{opacity:0}
+#mtl-page .mtl-hero.mtl-loaded .mtl-hero-media video,#mtl-page .mtl-hero.mtl-loaded .mtl-hero-media img{transform:scale(1)}
+#mtl-page .mtl-hero.mtl-loaded .mtl-hero-brand{opacity:1;transform:none;filter:none}
+#mtl-page .mtl-hero.mtl-loaded .mtl-hero-rule{width:64px}
+#mtl-page .mtl-hero.mtl-loaded .mtl-btn-row{opacity:1;transform:none}
+#mtl-page .mtl-hero.mtl-loaded .mtl-line > span{transform:none}
+#mtl-page .mtl-hero.mtl-loaded .mtl-hero-sub{opacity:1}
+#mtl-page .mtl-vidctl{position:absolute;z-index:4;left:var(--mtl-gutter);bottom:24px;display:flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.75);opacity:0;transition:opacity 1s var(--mtl-ease) 2.4s,color .3s}
+#mtl-page .mtl-hero.mtl-loaded .mtl-vidctl{opacity:1}
+#mtl-page .mtl-vidctl:hover{color:#fff}
+#mtl-page .mtl-vidctl svg{width:14px;height:14px}
+#mtl-page .mtl-scrollcue{position:absolute;z-index:2;left:50%;bottom:22px;width:1px;height:42px;background:rgba(255,255,255,.25);overflow:hidden}
+#mtl-page .mtl-scrollcue::after{content:"";position:absolute;left:0;top:-100%;width:1px;height:100%;background:#fff;animation:mtl-cue 2.4s var(--mtl-ease) infinite}
+@keyframes mtl-cue{0%{top:-100%}60%,100%{top:100%}}
+
+/* ---------- 2. venue ---------- */
+#mtl-page .mtl-venue{padding:clamp(90px,12vw,170px) 0}
+#mtl-page .mtl-venue-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(40px,7vw,110px);align-items:center}
+#mtl-page .mtl-venue-img{aspect-ratio:4/5}
+#mtl-page .mtl-venue-img img{width:100%;height:100%;object-fit:cover}
+#mtl-page .mtl-venue-copy .mtl-h2{margin-bottom:28px;max-width:14ch}
+#mtl-page .mtl-venue-copy .mtl-lede + .mtl-lede{margin-top:16px}
+
+/* ---------- 3. craft (sticky story) ---------- */
+#mtl-page .mtl-craft{background:var(--mtl-forest);color:#fff;padding:clamp(90px,11vw,150px) 0}
+#mtl-page .mtl-craft-intro{max-width:720px;margin-bottom:clamp(40px,6vw,80px)}
+#mtl-page .mtl-craft-intro .mtl-h2{color:#fff;margin-bottom:18px}
+#mtl-page .mtl-craft-intro p{color:rgba(255,255,255,.78);max-width:52ch}
+#mtl-page .mtl-craft-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,7vw,110px);align-items:start}
+#mtl-page .mtl-craft-media{position:sticky;top:12vh;height:76vh;overflow:hidden}
+#mtl-page .mtl-craft-media figure{position:absolute;inset:0;opacity:0;transform:scale(1.08);transition:opacity 1s var(--mtl-ease),transform 1.6s var(--mtl-ease)}
+#mtl-page .mtl-craft-media figure.mtl-active{opacity:1;transform:scale(1)}
+#mtl-page .mtl-craft-media img{width:100%;height:100%;object-fit:cover}
+#mtl-page .mtl-craft-progress{position:absolute;z-index:2;left:20px;right:20px;bottom:20px;display:flex;gap:8px}
+#mtl-page .mtl-craft-progress span{flex:1;height:2px;background:rgba(255,255,255,.3);position:relative;overflow:hidden}
+#mtl-page .mtl-craft-progress span::after{content:"";position:absolute;inset:0;background:var(--mtl-copper);transform:scaleX(0);transform-origin:left;transition:transform .8s var(--mtl-ease)}
+#mtl-page .mtl-craft-progress span.mtl-on::after{transform:scaleX(1)}
+#mtl-page .mtl-craft-step{min-height:76vh;display:flex;flex-direction:column;justify-content:center;opacity:.28;transition:opacity .8s var(--mtl-ease)}
+#mtl-page .mtl-craft-step.mtl-active{opacity:1}
+#mtl-page .mtl-craft-step h3{font-family:var(--mtl-display);font-weight:400;font-size:clamp(26px,2.8vw,38px);line-height:1.15;color:#fff;margin-bottom:18px}
+#mtl-page .mtl-craft-step p{color:rgba(255,255,255,.8);max-width:44ch}
+#mtl-page .mtl-craft-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px;border-top:1px solid rgba(255,255,255,.18);padding-top:26px}
+#mtl-page .mtl-craft-stats strong{display:block;font-family:var(--mtl-display);font-weight:300;font-size:clamp(36px,4vw,56px);line-height:1;color:var(--mtl-copper)}
+#mtl-page .mtl-craft-stats span{display:block;margin-top:10px;font-size:13px;color:rgba(255,255,255,.7)}
+
+/* ---------- 4. perfect for ---------- */
+#mtl-page .mtl-occasions{background:var(--mtl-sand);padding:clamp(90px,11vw,150px) 0}
+#mtl-page .mtl-occ-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:clamp(48px,6vw,80px);flex-wrap:wrap}
+#mtl-page .mtl-occ-head p{max-width:40ch}
+#mtl-page .mtl-occ-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,56px)}
+#mtl-page .mtl-occ-group{border-top:1px solid var(--mtl-forest);padding-top:26px}
+#mtl-page .mtl-occ-group h3{font-family:var(--mtl-display);font-weight:400;font-style:italic;font-size:15px;letter-spacing:.06em;color:var(--mtl-copper-deep);margin-bottom:22px}
+#mtl-page .mtl-occ-group li{font-family:var(--mtl-display);font-size:clamp(20px,1.9vw,26px);line-height:1.3;color:var(--mtl-ink);padding:12px 0;border-bottom:1px solid var(--mtl-line);transition:color .3s var(--mtl-ease),padding-left .4s var(--mtl-ease)}
+#mtl-page .mtl-occ-group li:hover{color:var(--mtl-copper-deep);padding-left:10px}
+
+/* ---------- 5. capacity ---------- */
+#mtl-page .mtl-capacity{background:var(--mtl-forest-deep);color:#fff;padding:clamp(70px,8vw,110px) 0}
+#mtl-page .mtl-cap-title{font-family:var(--mtl-display);font-size:15px;font-style:italic;letter-spacing:.08em;color:var(--mtl-copper);margin-bottom:44px}
+#mtl-page .mtl-cap-grid{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid rgba(255,255,255,.18)}
+#mtl-page .mtl-cap-item{padding:34px 20px 8px 0;border-right:1px solid rgba(255,255,255,.12);padding-left:clamp(0px,2vw,28px)}
+#mtl-page .mtl-cap-item:first-child{padding-left:0}
+#mtl-page .mtl-cap-item:last-child{border-right:0}
+#mtl-page .mtl-cap-num{font-family:var(--mtl-display);font-size:clamp(48px,6vw,84px);line-height:1;color:#fff;display:flex;align-items:baseline;gap:6px}
+#mtl-page .mtl-cap-num small{font-size:.32em;white-space:nowrap;color:var(--mtl-copper);letter-spacing:.04em}
+#mtl-page .mtl-cap-feature{font-family:var(--mtl-display);font-size:clamp(22px,2.1vw,30px);line-height:1.15;color:#fff}
+#mtl-page .mtl-cap-label{display:block;margin-top:14px;font-size:14px;color:rgba(255,255,255,.7);letter-spacing:.04em}
+#mtl-page .mtl-cap-icon{width:28px;height:28px;color:var(--mtl-copper);margin-bottom:22px}
+
+/* ---------- 6. curated dining ---------- */
+#mtl-page .mtl-dining{padding:clamp(90px,12vw,170px) 0}
+#mtl-page .mtl-dining-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(40px,7vw,110px);align-items:center}
+#mtl-page .mtl-dining-copy .mtl-h2{margin-bottom:28px;max-width:12ch}
+#mtl-page .mtl-dining-copy .mtl-btn-row{margin-top:40px}
+#mtl-page .mtl-dining-media{position:relative}
+#mtl-page .mtl-dining-main{aspect-ratio:5/4}
+#mtl-page .mtl-dining-main img,#mtl-page .mtl-inset img{width:100%;height:100%;object-fit:cover}
+#mtl-page .mtl-inset{position:absolute;width:38%;aspect-ratio:3/4;left:-12%;bottom:-14%;border:10px solid var(--mtl-cream)}
+
+/* ---------- 7. beverage ---------- */
+#mtl-page .mtl-bev{background:var(--mtl-forest-deep);color:#fff}
+#mtl-page .mtl-bev-hero{position:relative;height:clamp(460px,88vh,860px);overflow:hidden}
+#mtl-page .mtl-bev-media{position:absolute;inset:-12% 0;will-change:transform}
+#mtl-page .mtl-bev-media img{width:100%;height:100%;object-fit:cover}
+#mtl-page .mtl-bev-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(27,44,35,0) 35%,rgba(27,44,35,.95) 100%)}
+#mtl-page .mtl-bev-copy{position:absolute;z-index:2;left:0;right:0;bottom:clamp(40px,7vw,80px)}
+#mtl-page .mtl-bev-copy .mtl-h2{color:#fff;margin-bottom:18px}
+#mtl-page .mtl-bev-copy p{max-width:48ch;color:rgba(255,255,255,.85)}
+#mtl-page .mtl-bev-tiers{padding:clamp(56px,7vw,90px) 0 clamp(80px,9vw,120px)}
+#mtl-page .mtl-tier-caption{font-size:14px;color:rgba(255,255,255,.65);margin-bottom:34px}
+
+/* tier stepper: auto-advances, hover pauses, click / arrow keys select */
+#mtl-page .mtl-tier-list{--mtl-tier-p:0;display:grid;grid-template-columns:repeat(5,1fr);position:relative}
+#mtl-page .mtl-tier-list::before,#mtl-page .mtl-tier-list::after{content:"";position:absolute;left:7px;top:7px;height:1px}
+#mtl-page .mtl-tier-list::before{right:0;background:rgba(255,255,255,.18)}
+#mtl-page .mtl-tier-list::after{width:calc((100% - 7px) * .8 * var(--mtl-tier-p));background:var(--mtl-copper);transition:width .9s var(--mtl-ease)}
+#mtl-page .mtl-tier{position:relative;display:block;text-align:left;padding:38px 16px 0 0;color:rgba(255,255,255,.5);transition:color .5s var(--mtl-ease)}
+#mtl-page .mtl-tier-dot{position:absolute;top:0;left:0;width:15px;height:15px;border-radius:50%;background:var(--mtl-forest-deep);border:1px solid rgba(255,255,255,.4);transition:background .5s var(--mtl-ease),border-color .5s var(--mtl-ease),transform .5s var(--mtl-ease)}
+#mtl-page .mtl-tier-dot::after{content:"";position:absolute;inset:-7px;border-radius:50%;border:1px solid var(--mtl-copper);opacity:0;transform:scale(.6)}
+#mtl-page .mtl-tier.mtl-done .mtl-tier-dot{background:var(--mtl-copper);border-color:var(--mtl-copper)}
+#mtl-page .mtl-tier[aria-selected="true"]{color:#fff}
+#mtl-page .mtl-tier[aria-selected="true"] .mtl-tier-dot{background:var(--mtl-copper);border-color:var(--mtl-copper);transform:scale(1.15)}
+#mtl-page .mtl-tier[aria-selected="true"] .mtl-tier-dot::after{animation:mtl-pulse 2.2s var(--mtl-ease) infinite}
+@keyframes mtl-pulse{0%{opacity:.9;transform:scale(.6)}100%{opacity:0;transform:scale(1.6)}}
+#mtl-page .mtl-tier:hover{color:#fff}
+#mtl-page .mtl-tier-name{display:block;font-family:var(--mtl-display);font-size:clamp(20px,2vw,28px);line-height:1.15}
+#mtl-page .mtl-tier-timer{display:block;height:1px;margin-top:16px;width:70%;background:rgba(255,255,255,.12);position:relative;overflow:hidden;opacity:0;transition:opacity .4s}
+#mtl-page .mtl-tier-timer::after{content:"";position:absolute;inset:0;background:var(--mtl-copper);transform:scaleX(0);transform-origin:left}
+#mtl-page .mtl-tier[aria-selected="true"] .mtl-tier-timer{opacity:1}
+#mtl-page .mtl-tier[aria-selected="true"] .mtl-tier-timer::after{animation:mtl-timer var(--mtl-tier-dur,5s) linear forwards}
+#mtl-page .mtl-tier-list.mtl-paused .mtl-tier-timer::after,#mtl-page .mtl-tier-list.mtl-offscreen .mtl-tier-timer::after{animation-play-state:paused}
+@keyframes mtl-timer{to{transform:scaleX(1)}}
+#mtl-page .mtl-tier-panel{margin-top:48px;display:grid;grid-template-columns:140px 1fr;gap:24px;align-items:baseline;border-top:1px solid rgba(255,255,255,.12);padding-top:32px;min-height:130px}
+#mtl-page .mtl-tier-count{font-family:var(--mtl-display);font-style:italic;font-size:15px;color:var(--mtl-copper)}
+#mtl-page .mtl-tier-desc{font-family:var(--mtl-display);font-size:clamp(20px,2vw,28px);line-height:1.35;color:#fff;max-width:40ch;transition:opacity .45s var(--mtl-ease),transform .45s var(--mtl-ease)}
+#mtl-page .mtl-tier-desc.mtl-swap{opacity:0;transform:translateY(10px)}
+#mtl-page .mtl-bev-tiers .mtl-btn-row{margin-top:48px}
+
+/* ---------- 8. testimonials (infinite, scroll-reactive) ---------- */
+#mtl-page .mtl-testi{padding:clamp(90px,11vw,150px) 0 clamp(80px,10vw,130px);overflow:hidden}
+#mtl-page .mtl-testi-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(40px,5vw,64px)}
+#mtl-page .mtl-testi-head p{max-width:36ch}
+#mtl-page .mtl-testi-rows{display:flex;flex-direction:column;gap:22px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+#mtl-page .mtl-testi-track{display:flex;width:max-content;will-change:transform}
+#mtl-page .mtl-testi-set{display:flex;gap:22px;padding-right:22px}
+#mtl-page .mtl-quote{width:clamp(290px,30vw,420px);flex:none;background:#fff;border:1px solid var(--mtl-line);padding:32px 30px 28px;display:flex;flex-direction:column;justify-content:space-between;gap:28px;transition:border-color .4s var(--mtl-ease),transform .5s var(--mtl-ease)}
+#mtl-page .mtl-quote:hover{border-color:var(--mtl-copper);transform:translateY(-4px)}
+#mtl-page .mtl-quote-mark{font-family:var(--mtl-display);font-size:54px;line-height:.6;color:var(--mtl-copper);height:22px}
+#mtl-page .mtl-quote blockquote{font-family:var(--mtl-display);font-size:clamp(18px,1.5vw,21px);line-height:1.45;color:var(--mtl-ink)}
+#mtl-page .mtl-quote figcaption{font-size:13px;color:var(--mtl-body);border-top:1px solid var(--mtl-line);padding-top:16px}
+#mtl-page .mtl-quote figcaption strong{display:block;font-weight:500;color:var(--mtl-ink)}
+#mtl-page .mtl-quote.mtl-quote-dark{background:var(--mtl-forest);border-color:var(--mtl-forest)}
+#mtl-page .mtl-quote.mtl-quote-dark blockquote,#mtl-page .mtl-quote.mtl-quote-dark figcaption strong{color:#fff}
+#mtl-page .mtl-quote.mtl-quote-dark figcaption{color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.18)}
+/* modern CSS: heading rises with scroll position where supported */
+@supports (animation-timeline: view()){
+  #mtl-page .mtl-testi-head .mtl-h2{animation:mtl-rise linear both;animation-timeline:view();animation-range:entry 0% cover 35%}
+  #mtl-page .mtl-testi-rows{animation:mtl-widen linear both;animation-timeline:view();animation-range:entry 0% cover 40%}
+}
+@keyframes mtl-rise{from{opacity:0;transform:translateY(40px);letter-spacing:.04em}to{opacity:1;transform:none;letter-spacing:-.005em}}
+@keyframes mtl-widen{from{opacity:.2;transform:scale(.94)}to{opacity:1;transform:none}}
+
+/* ---------- 9. chef ---------- */
+#mtl-page .mtl-chef{background:var(--mtl-sand);padding:clamp(90px,12vw,170px) 0}
+#mtl-page .mtl-chef-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(40px,7vw,110px);align-items:start}
+#mtl-page .mtl-chef-img{aspect-ratio:4/5;position:sticky;top:90px}
+#mtl-page .mtl-chef-img img{width:100%;height:100%;object-fit:cover}
+#mtl-page .mtl-chef-copy .mtl-h2{margin-bottom:22px}
+#mtl-page .mtl-awards{margin:44px 0;border-top:1px solid var(--mtl-line)}
+#mtl-page .mtl-award{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--mtl-line)}
+#mtl-page .mtl-award-name{font-family:var(--mtl-display);font-size:clamp(17px,1.5vw,21px);line-height:1.3;color:var(--mtl-ink)}
+#mtl-page .mtl-award-name span{display:block;font-family:var(--mtl-sans);font-size:13px;color:var(--mtl-body);margin-top:3px}
+#mtl-page .mtl-award-year{font-family:var(--mtl-display);font-style:italic;font-size:15px;color:var(--mtl-copper-deep);white-space:nowrap}
+
+/* ---------- 10. deck ---------- */
+#mtl-page .mtl-deck{background:var(--mtl-copper);color:#fff;padding:clamp(56px,7vw,88px) 0}
+#mtl-page .mtl-deck-grid{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
+#mtl-page .mtl-deck .mtl-h2{color:#fff;margin-bottom:10px}
+#mtl-page .mtl-deck p{color:rgba(255,255,255,.9)}
+#mtl-page .mtl-deck .mtl-btn{background:var(--mtl-forest);border-color:var(--mtl-forest)}
+#mtl-page .mtl-deck .mtl-btn:hover{background:var(--mtl-forest-deep);border-color:var(--mtl-forest-deep)}
+
+/* ---------- 11. inquiry ---------- */
+#mtl-page .mtl-inquire{padding:clamp(90px,11vw,150px) 0;scroll-margin-top:60px}
+#mtl-page .mtl-inq-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(40px,6vw,90px);align-items:start}
+#mtl-page .mtl-inq-head .mtl-h2{margin-bottom:14px}
+#mtl-page .mtl-inq-head p{margin-bottom:44px}
+#mtl-page .mtl-form{display:grid;grid-template-columns:1fr 1fr;gap:26px 32px}
+#mtl-page .mtl-field{display:flex;flex-direction:column;gap:6px;min-width:0}
+#mtl-page .mtl-field-full{grid-column:1 / -1}
+#mtl-page .mtl-field label{font-size:13px;font-weight:500;letter-spacing:.04em;color:var(--mtl-ink)}
+#mtl-page .mtl-field label .mtl-req{color:var(--mtl-copper-deep);margin-left:3px}
+#mtl-page .mtl-field input,#mtl-page .mtl-field select,#mtl-page .mtl-field textarea{
+  -webkit-appearance:none;appearance:none;width:100%;
+  font-family:var(--mtl-sans);font-size:16px;color:var(--mtl-ink);line-height:1.4;
+  background:transparent;border:0;border-bottom:1px solid rgba(38,60,48,.35);border-radius:0;
+  padding:10px 0 12px;margin:0;box-shadow:none;outline:none;transition:border-color .3s var(--mtl-ease)}
+#mtl-page .mtl-field textarea{resize:vertical;min-height:90px}
+#mtl-page .mtl-field select{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23A85F3C' stroke-width='1.4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 2px center;padding-right:24px}
+#mtl-page .mtl-field input::placeholder,#mtl-page .mtl-field textarea::placeholder{color:rgba(78,78,79,.55)}
+#mtl-page .mtl-field input:focus,#mtl-page .mtl-field select:focus,#mtl-page .mtl-field textarea:focus{border-bottom-color:var(--mtl-copper-deep)}
+#mtl-page .mtl-field.mtl-err input,#mtl-page .mtl-field.mtl-err select{border-bottom-color:#B3261E}
+#mtl-page .mtl-errmsg{font-size:12px;color:#B3261E;display:none}
+#mtl-page .mtl-field.mtl-err .mtl-errmsg{display:block}
+#mtl-page .mtl-other{display:none}
+#mtl-page .mtl-other.mtl-show{display:flex}
+#mtl-page .mtl-form-actions{grid-column:1 / -1;display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:10px}
+#mtl-page .mtl-form-note{font-size:13px}
+#mtl-page .mtl-success{display:none;border-top:1px solid var(--mtl-forest);padding-top:28px}
+#mtl-page .mtl-success h3{font-family:var(--mtl-display);font-weight:400;font-size:28px;color:var(--mtl-ink);margin-bottom:10px}
+#mtl-page .mtl-inq-side{position:sticky;top:90px}
+#mtl-page .mtl-inq-side .mtl-mask{aspect-ratio:3/4}
+#mtl-page .mtl-inq-side .mtl-mask img{width:100%;height:100%;object-fit:cover}
+#mtl-page .mtl-contact{margin-top:26px;font-size:14px;line-height:1.9}
+#mtl-page .mtl-contact a{border-bottom:1px solid var(--mtl-line);transition:border-color .3s}
+#mtl-page .mtl-contact a:hover{border-color:var(--mtl-copper)}
+#mtl-page .mtl-contact strong{font-weight:500;color:var(--mtl-ink)}
+
+/* ---------- floating CTA ---------- */
+#mtl-page .mtl-float{position:fixed;z-index:60;right:clamp(16px,3vw,32px);bottom:clamp(16px,3vw,32px);opacity:0;transform:translateY(20px);pointer-events:none;transition:opacity .5s var(--mtl-ease),transform .5s var(--mtl-ease),background .35s;box-shadow:0 10px 30px rgba(27,44,35,.25)}
+#mtl-page .mtl-float.mtl-show{opacity:1;transform:none;pointer-events:auto}
+
+/* ---------- responsive ---------- */
+@media (max-width:1024px){
+  #mtl-page .mtl-cap-grid{grid-template-columns:repeat(3,1fr)}
+  #mtl-page .mtl-cap-item{border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:30px}
+  #mtl-page .mtl-cap-item:nth-child(3){border-right:0}
+  #mtl-page .mtl-cap-item:nth-child(4){padding-left:0}
+}
+@media (max-width:860px){
+  #mtl-page .mtl-venue-grid,#mtl-page .mtl-dining-grid,#mtl-page .mtl-chef-grid,#mtl-page .mtl-inq-grid,#mtl-page .mtl-craft-grid{grid-template-columns:1fr}
+  #mtl-page .mtl-occ-grid{grid-template-columns:1fr}
+  #mtl-page .mtl-dining-media{order:-1;margin-bottom:40px}
+  #mtl-page .mtl-inset{left:auto;right:-4%;bottom:-10%;width:34%}
+  #mtl-page .mtl-chef-img,#mtl-page .mtl-inq-side{position:relative;top:auto}
+  #mtl-page .mtl-inq-side{order:-1}
+  #mtl-page .mtl-inq-side .mtl-mask{aspect-ratio:16/10}
+  #mtl-page .mtl-craft-media{top:64px;height:42vh;z-index:2}
+  #mtl-page .mtl-craft-grid{gap:0}
+  #mtl-page .mtl-craft-step{min-height:62vh;padding-top:32px}
+  #mtl-page .mtl-tier-list{grid-template-columns:1fr}
+  #mtl-page .mtl-tier-list::before{right:auto;bottom:0;width:1px;height:auto}
+  #mtl-page .mtl-tier-list::after{width:1px;height:calc((100% - 30px) * var(--mtl-tier-p));transition:height .9s var(--mtl-ease)}
+  #mtl-page .mtl-tier{padding:0 0 26px 40px}
+  #mtl-page .mtl-tier-timer{width:120px;margin-top:10px}
+  #mtl-page .mtl-tier-panel{grid-template-columns:1fr;gap:10px;margin-top:28px}
+}
+@media (max-width:600px){
+  #mtl-page .mtl-cap-grid{grid-template-columns:1fr 1fr}
+  #mtl-page .mtl-cap-item{padding-left:0 !important;border-right:0 !important}
+  #mtl-page .mtl-cap-item:nth-child(odd){padding-right:16px;border-right:1px solid rgba(255,255,255,.12) !important}
+  #mtl-page .mtl-cap-item:nth-child(even){padding-left:18px !important}
+  #mtl-page .mtl-cap-item:last-child{grid-column:1 / -1;border-right:0 !important}
+  #mtl-page .mtl-craft-stats{grid-template-columns:1fr 1fr 1fr;gap:10px}
+  #mtl-page .mtl-form{grid-template-columns:1fr}
+  #mtl-page .mtl-hero .mtl-btn-row .mtl-btn{flex:1 1 100%}
+  #mtl-page .mtl-float{left:16px;right:16px}
+  #mtl-page .mtl-vidctl{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  #mtl-page *,#mtl-page *::before,#mtl-page *::after{transition-duration:.01ms !important;animation:none !important}
+  #mtl-page .mtl-fade,#mtl-page .mtl-mask,#mtl-page .mtl-mask img,#mtl-page .mtl-line > span,#mtl-page .mtl-hero-brand,#mtl-page .mtl-hero-sub,#mtl-page .mtl-hero .mtl-btn-row{opacity:1 !important;transform:none !important;clip-path:none !important;filter:none !important}
+  #mtl-page .mtl-veil{display:none}
+  #mtl-page .mtl-testi-rows{overflow-x:auto}
+}
+</style>
+
+<div id="mtl-page" class="mtl-page">
+
+  <!-- 1. HERO -->
+  <header class="mtl-hero" id="mtl-hero">
+    <div class="mtl-hero-media" id="mtl-hero-media">
+      <!-- REPLACE: your own dining-room film (mp4, 10–20s loop, muted). Poster shows while it loads. -->
+      <video id="mtl-hero-video" autoplay muted loop playsinline preload="auto"
+             poster="https://images.pexels.com/photos/28059309/pexels-photo-28059309.jpeg?auto=compress&cs=tinysrgb&w=1920">
+        <source src="https://assets.mixkit.co/videos/29050/29050-720.mp4" type="video/mp4">
+        <source src="https://assets.mixkit.co/videos/29050/29050-360.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="mtl-veil" aria-hidden="true"></div>
+    <div class="mtl-hero-inner" id="mtl-hero-inner">
+      <div class="mtl-hero-brand">
+        <img class="mtl-hero-logo" src="https://www.chattinewyork.com/wp-content/uploads/2026/09/Muttch-Lounge-wt.png" alt="Muttch Lounge"
+             onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <span class="mtl-hero-wordmark" hidden>Muttch Lounge</span>
+        <span class="mtl-hero-rule" aria-hidden="true"></span>
+      </div>
+      <h1>
+        <span class="mtl-line"><span>Private Dining &amp; Event Venue</span></span>
+        <span class="mtl-line"><span>in Midtown Manhattan</span></span>
+      </h1>
+      <p class="mtl-hero-sub">An elegant private venue for intimate dinners, corporate gatherings and unforgettable celebrations.</p>
+      <div class="mtl-btn-row">
+        <a class="mtl-btn" href="#mtl-inquire">Plan your event</a>
+        <a class="mtl-btn mtl-btn-light" href="https://www.chattinewyork.com/wp-content/uploads/2026/08/Event-deck.pdf" download>Download event deck</a>
+      </div>
+    </div>
+    <button class="mtl-vidctl" id="mtl-vidctl" type="button" aria-pressed="false">
+      <svg viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><rect x="3" y="2" width="2.6" height="10"/><rect x="8.4" y="2" width="2.6" height="10"/></svg>
+      <span>Pause film</span>
+    </button>
+    <span class="mtl-scrollcue" aria-hidden="true"></span>
+  </header>
+
+  <!-- 2. VENUE -->
+  <section class="mtl-venue" aria-labelledby="mtl-venue-title">
+    <div class="mtl-wrap mtl-venue-grid">
+      <figure class="mtl-venue-img mtl-mask" data-mtl-reveal>
+        <!-- REPLACE -->
+        <img src="https://images.pexels.com/photos/28059316/pexels-photo-28059316.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Candlelit table setting for a private dinner in NYC" loading="lazy">
+      </figure>
+      <div class="mtl-venue-copy mtl-fade" data-mtl-reveal>
+        <p class="mtl-kicker">Muttch Lounge at Chatti</p>
+        <h2 class="mtl-h2" id="mtl-venue-title">A venue designed around your occasion</h2>
+        <p class="mtl-lede">Muttch Lounge is an elegant private event venue inside Chatti, offering a refined setting for celebrations, corporate dinners, networking events and milestone occasions.</p>
+        <p class="mtl-lede">From private dining in Midtown Manhattan for a small table to a full restaurant buyout, our team shapes the room, the menu and the service around your guests.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. CRAFT — brand story, sticky images swap as you scroll -->
+  <section class="mtl-craft" id="mtl-craft" aria-labelledby="mtl-craft-title">
+    <div class="mtl-wrap">
+      <div class="mtl-craft-intro mtl-fade" data-mtl-reveal>
+        <p class="mtl-kicker">Our craft</p>
+        <h2 class="mtl-h2" id="mtl-craft-title">Cooked the long way, for your table</h2>
+        <p>Every event menu at Muttch Lounge comes from the same kitchen and the same research as Chatti.</p>
+      </div>
+      <div class="mtl-craft-grid">
+        <div class="mtl-craft-media" aria-hidden="true">
+          <!-- REPLACE: three of your own kitchen / dish / table photos -->
+          <figure class="mtl-active"><img src="https://images.pexels.com/photos/19553654/pexels-photo-19553654.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="" loading="lazy"></figure>
+          <figure><img src="https://images.pexels.com/photos/17104944/pexels-photo-17104944.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="" loading="lazy"></figure>
+          <figure><img src="https://images.pexels.com/photos/5410418/pexels-photo-5410418.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="" loading="lazy"></figure>
+          <div class="mtl-craft-progress"><span class="mtl-on"></span><span></span><span></span></div>
+        </div>
+        <div class="mtl-craft-steps">
+          <article class="mtl-craft-step mtl-active">
+            <h3>Recipes gathered at the source</h3>
+            <p>Chef Regi spent more than three years travelling across Kerala, learning from home cooks, toddy shop chefs and culinary artisans.</p>
+            <div class="mtl-craft-stats">
+              <div><strong data-mtl-count="70">70</strong><span>Toddy shops visited</span></div>
+              <div><strong data-mtl-count="265">265</strong><span>Homes cooked in</span></div>
+              <div><strong data-mtl-count="800" data-mtl-suffix="+">800+</strong><span>Recipes documented</span></div>
+            </div>
+          </article>
+          <article class="mtl-craft-step">
+            <h3>Named for the clay pot</h3>
+            <p>A chatti is the traditional clay pot at the heart of Kerala&rsquo;s toddy shops and homes. It gives the restaurant its name and sets the tone for every menu we serve.</p>
+          </article>
+          <article class="mtl-craft-step">
+            <h3>Made to be shared</h3>
+            <p>Toddy shop dining is communal by nature: bold plates, passed around the table. Your event menu is built the same way, so every guest leaves having tasted a little of everything.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PERFECT FOR -->
+  <section class="mtl-occasions" aria-labelledby="mtl-occ-title">
+    <div class="mtl-wrap">
+      <div class="mtl-occ-head mtl-fade" data-mtl-reveal>
+        <h2 class="mtl-h2" id="mtl-occ-title">Perfect for</h2>
+        <p>A private event venue in NYC for business, celebration and family, each hosted with the same care.</p>
+      </div>
+      <div class="mtl-occ-grid">
+        <div class="mtl-occ-group mtl-fade" data-mtl-reveal>
+          <h3>Corporate</h3>
+          <ul><li>Corporate Events</li><li>Networking Events</li><li>Product Launches</li><li>Holiday Parties</li></ul>
+        </div>
+        <div class="mtl-occ-group mtl-fade" data-mtl-reveal>
+          <h3>Celebrations</h3>
+          <ul><li>Birthday Celebrations</li><li>Engagement Parties</li><li>Cocktail Receptions</li><li>Anniversary Dinners</li></ul>
+        </div>
+        <div class="mtl-occ-group mtl-fade" data-mtl-reveal>
+          <h3>Family &amp; milestones</h3>
+          <ul><li>Rehearsal Dinners</li><li>Graduation Celebrations</li><li>Baby Showers</li><li>Family Gatherings</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. CAPACITY -->
+  <section class="mtl-capacity" aria-labelledby="mtl-cap-title">
+    <div class="mtl-wrap">
+      <h2 class="mtl-cap-title" id="mtl-cap-title">Muttch Lounge</h2>
+      <ul class="mtl-cap-grid">
+        <li class="mtl-cap-item"><div class="mtl-cap-num"><small>up to</small><span data-mtl-count="70">70</span></div><span class="mtl-cap-label">Seated</span></li>
+        <li class="mtl-cap-item"><div class="mtl-cap-num"><small>up to</small><span data-mtl-count="100">100</span></div><span class="mtl-cap-label">Standing</span></li>
+        <li class="mtl-cap-item">
+          <svg class="mtl-cap-icon" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M5 4h18l-9 11z"/><path d="M14 15v9M9 24h10"/></svg>
+          <div class="mtl-cap-feature">Dedicated bar</div>
+        </li>
+        <li class="mtl-cap-item">
+          <svg class="mtl-cap-icon" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="14" cy="14" r="9"/><circle cx="14" cy="14" r="5"/><path d="M2 5v7a2 2 0 0 0 2 2v10M26 4v20M26 4c-2 1-3 4-3 7h3"/></svg>
+          <div class="mtl-cap-feature">Private dining</div>
+        </li>
+        <li class="mtl-cap-item">
+          <svg class="mtl-cap-icon" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="3" y="5" width="22" height="14"/><path d="M10 24h8M14 19v5"/></svg>
+          <div class="mtl-cap-feature">AV available</div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6. CURATED DINING -->
+  <section class="mtl-dining" aria-labelledby="mtl-dining-title">
+    <div class="mtl-wrap mtl-dining-grid">
+      <div class="mtl-dining-copy mtl-fade" data-mtl-reveal>
+        <p class="mtl-kicker">Menus for your event</p>
+        <h2 class="mtl-h2" id="mtl-dining-title">Curated dining collections</h2>
+        <p class="mtl-lede">Every event is built around your guests. Select from chef-curated lunch and dinner collections featuring authentic Kerala cuisine, handcrafted beverages and personalized enhancements.</p>
+        <div class="mtl-btn-row">
+          <a class="mtl-btn" href="https://www.chattinewyork.com/wp-content/uploads/2026/08/Event-deck.pdf" target="_blank" rel="noopener">View event deck</a>
+          <a class="mtl-btn mtl-btn-ghost" href="https://www.chattinewyork.com/food-menu">View menu</a>
+        </div>
+      </div>
+      <div class="mtl-dining-media">
+        <!-- REPLACE -->
+        <figure class="mtl-dining-main mtl-mask" data-mtl-reveal>
+          <img src="https://images.pexels.com/photos/5410418/pexels-photo-5410418.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Kerala sadya served on banana leaf, part of the Chatti event menu" loading="lazy">
+        </figure>
+        <figure class="mtl-inset mtl-mask" data-mtl-reveal>
+          <img src="https://images.pexels.com/photos/17104944/pexels-photo-17104944.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Puttu and curry served on a leaf" loading="lazy">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. BEVERAGE -->
+  <section class="mtl-bev" aria-labelledby="mtl-bev-title">
+    <div class="mtl-bev-hero">
+      <div class="mtl-bev-media" id="mtl-bev-media">
+        <!-- REPLACE: wide photo of the Muttch Lounge bar -->
+        <img src="https://images.pexels.com/photos/13811358/pexels-photo-13811358.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Backlit bottles of premium spirits at the bar" loading="lazy">
+      </div>
+      <div class="mtl-bev-copy">
+        <div class="mtl-wrap mtl-fade" data-mtl-reveal>
+          <p class="mtl-kicker">Beverage experience</p>
+          <h2 class="mtl-h2" id="mtl-bev-title">Poured for the occasion</h2>
+          <p>From handcrafted cocktails to curated wine selections and premium spirits, our beverage collections are designed to complement every celebration.</p>
+        </div>
+      </div>
+    </div>
+    <div class="mtl-bev-tiers">
+      <div class="mtl-wrap">
+        <p class="mtl-tier-caption">Five bar packages, from essential to reserve. Select one to see what&rsquo;s included.</p>
+        <!-- EDIT: package descriptions live in data-mtl-desc on each button -->
+        <div class="mtl-tier-list" id="mtl-tiers" role="tablist" aria-label="Bar packages" style="--mtl-tier-dur:5s">
+          <button class="mtl-tier" role="tab" id="mtl-tier-1" aria-controls="mtl-tier-panel" aria-selected="true" tabindex="0"
+                  data-mtl-desc="Beer, house red and white wine, soft drinks and zero-proof coolers.">
+            <span class="mtl-tier-dot"></span><span class="mtl-tier-name">Essential</span><span class="mtl-tier-timer"></span>
+          </button>
+          <button class="mtl-tier" role="tab" id="mtl-tier-2" aria-controls="mtl-tier-panel" aria-selected="false" tabindex="-1"
+                  data-mtl-desc="Everything in Essential, plus Chatti&rsquo;s signature cocktails built on Kerala spices.">
+            <span class="mtl-tier-dot"></span><span class="mtl-tier-name">Signature</span><span class="mtl-tier-timer"></span>
+          </button>
+          <button class="mtl-tier" role="tab" id="mtl-tier-3" aria-controls="mtl-tier-panel" aria-selected="false" tabindex="-1"
+                  data-mtl-desc="A wider wine list with house spirits and a menu of classic cocktails.">
+            <span class="mtl-tier-dot"></span><span class="mtl-tier-name">House Selection</span><span class="mtl-tier-timer"></span>
+          </button>
+          <button class="mtl-tier" role="tab" id="mtl-tier-4" aria-controls="mtl-tier-panel" aria-selected="false" tabindex="-1"
+                  data-mtl-desc="Premium spirits, sparkling wine and a bartender-led cocktail list for your guests.">
+            <span class="mtl-tier-dot"></span><span class="mtl-tier-name">Prestige</span><span class="mtl-tier-timer"></span>
+          </button>
+          <button class="mtl-tier" role="tab" id="mtl-tier-5" aria-controls="mtl-tier-panel" aria-selected="false" tabindex="-1"
+                  data-mtl-desc="Top-shelf spirits and reserve wines, paired course by course with Chef Regi&rsquo;s menu.">
+            <span class="mtl-tier-dot"></span><span class="mtl-tier-name">Chef&rsquo;s Reserve</span><span class="mtl-tier-timer"></span>
+          </button>
+        </div>
+        <div class="mtl-tier-panel" id="mtl-tier-panel" role="tabpanel" aria-live="polite" aria-labelledby="mtl-tier-1">
+          <span class="mtl-tier-count" id="mtl-tier-count">Package 1 of 5</span>
+          <p class="mtl-tier-desc" id="mtl-tier-desc">Beer, house red and white wine, soft drinks and zero-proof coolers.</p>
+        </div>
+        <div class="mtl-btn-row">
+          <a class="mtl-btn mtl-btn-light" href="https://www.chattinewyork.com/bar-menu/">View our beverage menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. TESTIMONIALS — REPLACE with real guest reviews (Google / OpenTable) before launch -->
+  <section class="mtl-testi" id="mtl-testi" aria-labelledby="mtl-testi-title">
+    <div class="mtl-wrap">
+      <div class="mtl-testi-head">
+        <h2 class="mtl-h2" id="mtl-testi-title">From our hosts</h2>
+        <p>What guests say after hosting their evenings at Muttch Lounge.</p>
+      </div>
+    </div>
+    <div class="mtl-testi-rows">
+      <div class="mtl-testi-track" data-mtl-dir="1">
+        <div class="mtl-testi-set">
+          <figure class="mtl-quote"><span class="mtl-quote-mark" aria-hidden="true">&ldquo;</span><blockquote>Our client dinner felt personal from the first pour. The team handled every detail so we could focus on our guests.</blockquote><figcaption><strong>Guest name</strong>Corporate dinner, 40 guests</figcaption></figure>
+          <figure class="mtl-quote mtl-quote-dark"><span class="mtl-quote-mark" aria-hidden="true">&ldquo;</span><blockquote>The food was the talk of the night. People are still asking me about the prawn dish weeks later.</blockquote><figcaption><strong>Guest name</strong>Birthday celebration, 28 guests</figcaption></figure>
+          <figure class="mtl-quote"><span class="mtl-quote-mark" aria-hidden="true">&ldquo;</span><blockquote>Warm, beautiful room, and service that never felt rushed. Exactly the rehearsal dinner we pictured.</blockquote><figcaption><strong>Guest name</strong>Rehearsal dinner, 55 guests</figcaption></figure>
+          <figure class="mtl-quote"><span class="mtl-quote-mark" aria-hidden="true">&ldquo;</span><blockquote>The signature cocktails set the tone for the whole evening. Our team hasn&rsquo;t stopped talking about it.</blockquote><figcaption><strong>Guest name</strong>Holiday party, 90 guests</figcaption></figure>
+        </div>
+      </div>
+      <div class="mtl-testi-track" data-mtl-dir="-1">
+        <div class="mtl-testi-set">
+          <figure class="mtl-quote mtl-quote-dark"><span class="mtl-quote-mark" aria-hidden="true">&ldquo;</span><blockquote>Chef Regi came out to talk about each course. It turned a dinner into a story our guests remembered.</blockquote><figcaption><strong>Guest name</strong>Anniversary dinner, 20 guests</figcaption></figure>
+          <figure class="mtl-quote"><span class="mtl-quote-mark" aria-hidden="true">&ldquo;</span><blockquote>Easy planning, clear menus and a room that looked stunning on camera for our launch.</blockquote><figcaption><strong>Guest name</strong>Product launch, 70 guests</figcaption></figure>
+          <figure class="mtl-quote"><span class="mtl-quote-mark" aria-hidden="true">&ldquo;</span><blockquote>Midtown location, private bar, and food nobody else in the city is serving. We&rsquo;ll be back next year.</blockquote><figcaption><strong>Guest name</strong>Networking event, 80 guests</figcaption></figure>
+          <figure class="mtl-quote mtl-quote-dark"><span class="mtl-quote-mark" aria-hidden="true">&ldquo;</span><blockquote>Three generations at one table, and every one of them found something they loved.</blockquote><figcaption><strong>Guest name</strong>Family gathering, 35 guests</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. CHEF -->
+  <section class="mtl-chef" aria-labelledby="mtl-chef-title">
+    <div class="mtl-wrap mtl-chef-grid">
+      <figure class="mtl-chef-img mtl-mask" data-mtl-reveal>
+        <!-- REPLACE: Chef Regi Mathew portrait -->
+        <img src="https://images.pexels.com/photos/2544829/pexels-photo-2544829.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Chef Regi Mathew, founder of Chatti New York" loading="lazy">
+      </figure>
+      <div class="mtl-chef-copy mtl-fade" data-mtl-reveal>
+        <p class="mtl-kicker">The chef behind your menu</p>
+        <h2 class="mtl-h2" id="mtl-chef-title">Meet Chef Regi Mathew</h2>
+        <p class="mtl-lede">Visionary chef and founder of Chatti, celebrated for his authentic Kerala cuisine and global culinary excellence.</p>
+        <ul class="mtl-awards">
+          <li class="mtl-award"><p class="mtl-award-name">Best Chef Milan<span>One Knife</span></p><span class="mtl-award-year">2025</span></li>
+          <li class="mtl-award"><p class="mtl-award-name">The Best Chef Dubai<span>One Knife</span></p><span class="mtl-award-year">2024</span></li>
+          <li class="mtl-award"><p class="mtl-award-name">Hospitality Horizon Top Chefs Award<span>Hall of Fame</span></p><span class="mtl-award-year">2024</span></li>
+          <li class="mtl-award"><p class="mtl-award-name">Zee Zest Unlimit Awards<span>Chef of the Year</span></p><span class="mtl-award-year">2024</span></li>
+          <li class="mtl-award"><p class="mtl-award-name">Food Superstar<span>Hall of Fame 2024, Chef 2022 &amp; 2023</span></p><span class="mtl-award-year">2022&ndash;24</span></li>
+          <li class="mtl-award"><p class="mtl-award-name">Times Food &amp; Nightlife Awards<span>Chef of the Year</span></p><span class="mtl-award-year">2019</span></li>
+        </ul>
+        <a class="mtl-btn mtl-btn-ghost" href="https://www.chattinewyork.com/about-chef/">Meet Chef Regi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. DOWNLOAD DECK -->
+  <section class="mtl-deck" aria-labelledby="mtl-deck-title">
+    <div class="mtl-wrap mtl-deck-grid">
+      <div class="mtl-fade" data-mtl-reveal>
+        <h2 class="mtl-h2" id="mtl-deck-title">Download the event deck</h2>
+        <p>Explore menus, venue options and curated dining collections.</p>
+      </div>
+      <a class="mtl-btn" href="https://www.chattinewyork.com/wp-content/uploads/2026/08/Event-deck.pdf" download>Download PDF</a>
+    </div>
+  </section>
+
+  <!-- 11. INQUIRY -->
+  <section class="mtl-inquire" id="mtl-inquire" aria-labelledby="mtl-inq-title">
+    <div class="mtl-wrap mtl-inq-grid">
+      <div>
+        <div class="mtl-inq-head mtl-fade" data-mtl-reveal>
+          <p class="mtl-kicker">Inquire now</p>
+          <h2 class="mtl-h2" id="mtl-inq-title">Plan your event</h2>
+          <p>Share a few details and our events team will reply with availability and menu options.</p>
+        </div>
+
+        <!-- CONNECT: point action to your form handler, or rebuild in Elementor/CF7 with the same field names -->
+        <form class="mtl-form" id="mtl-form" action="#" method="post" novalidate>
+          <div class="mtl-field">
+            <label for="mtl-name">Name<span class="mtl-req" aria-hidden="true">*</span></label>
+            <input id="mtl-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+            <span class="mtl-errmsg">Enter your name.</span>
+          </div>
+          <div class="mtl-field">
+            <label for="mtl-email">Email<span class="mtl-req" aria-hidden="true">*</span></label>
+            <input id="mtl-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
+            <span class="mtl-errmsg">Enter a valid email address.</span>
+          </div>
+          <div class="mtl-field">
+            <label for="mtl-phone">Phone number<span class="mtl-req" aria-hidden="true">*</span></label>
+            <input id="mtl-phone" name="phone" type="tel" autocomplete="tel" placeholder="(212) 000 0000" required>
+            <span class="mtl-errmsg">Enter a phone number.</span>
+          </div>
+          <div class="mtl-field">
+            <label for="mtl-date">Date of event<span class="mtl-req" aria-hidden="true">*</span></label>
+            <input id="mtl-date" name="event_date" type="date" required>
+            <span class="mtl-errmsg">Choose a date.</span>
+          </div>
+          <div class="mtl-field">
+            <label for="mtl-type">Event type</label>
+            <select id="mtl-type" name="event_type">
+              <option value="">Select event type</option>
+              <option>Corporate</option><option>Social</option><option>NGO</option>
+              <option>Anniversary</option><option>Birthday</option><option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="mtl-field mtl-other" id="mtl-other-wrap">
+            <label for="mtl-other">Tell us your event</label>
+            <input id="mtl-other" name="event_type_other" type="text" placeholder="e.g. Book launch">
+          </div>
+          <div class="mtl-field">
+            <label for="mtl-guests">Number of guests</label>
+            <input id="mtl-guests" name="guests" type="number" min="1" max="100" inputmode="numeric" placeholder="Up to 100">
+          </div>
+          <div class="mtl-field">
+            <label for="mtl-time">Event time</label>
+            <select id="mtl-time" name="event_time">
+              <option value="">Select event time</option>
+              <option>Lunch</option><option>Dinner</option><option>High Tea</option>
+            </select>
+          </div>
+          <div class="mtl-field">
+            <label for="mtl-company">Company</label>
+            <input id="mtl-company" name="company" type="text" autocomplete="organization" placeholder="Company name">
+          </div>
+          <div class="mtl-field">
+            <label for="mtl-source">How did you hear about us?</label>
+            <input id="mtl-source" name="source" type="text" placeholder="Google, Instagram, a friend…">
+          </div>
+          <div class="mtl-field mtl-field-full">
+            <label for="mtl-notes">Notes</label>
+            <textarea id="mtl-notes" name="notes" rows="3" placeholder="Menu preferences, dietary needs, AV, florals"></textarea>
+          </div>
+          <div class="mtl-form-actions">
+            <button class="mtl-btn" type="submit">Send inquiry</button>
+            <span class="mtl-form-note">Fields marked * are required.</span>
+          </div>
+        </form>
+
+        <div class="mtl-success" id="mtl-success" role="status" tabindex="-1">
+          <h3>Inquiry sent</h3>
+          <p>Thank you. Our events team will be in touch shortly to confirm availability for your date.</p>
+        </div>
+      </div>
+
+      <aside class="mtl-inq-side">
+        <figure class="mtl-mask" data-mtl-reveal>
+          <!-- REPLACE -->
+          <img src="https://images.pexels.com/photos/28059309/pexels-photo-28059309.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Private dining room set for an evening event" loading="lazy">
+        </figure>
+        <div class="mtl-contact">
+          <p><strong>Muttch Lounge at Chatti</strong><br>252 W 37th St, New York, NY 10018</p>
+          <p><a href="tel:+12129949599">+1 (212) 994 9599</a><br><a href="mailto:info@thechatti.com">info@thechatti.com</a></p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <a class="mtl-btn mtl-float" id="mtl-float" href="#mtl-inquire">Plan your event</a>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"EventVenue","name":"Muttch Lounge at Chatti","description":"Private dining and event venue in Midtown Manhattan for up to 70 seated or 100 standing guests.","url":"https://www.chattinewyork.com/muttch-lounge/","telephone":"+1-212-994-9599","maximumAttendeeCapacity":100,"address":{"@type":"PostalAddress","streetAddress":"252 W 37th St","addressLocality":"New York","addressRegion":"NY","postalCode":"10018","addressCountry":"US"}}
+  </script>
+</div>
+
+<script>
+(function(){
+  var root=document.getElementById('mtl-page');
+  if(!root) return;
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hasIO='IntersectionObserver' in window;
+
+  /* ---------- hero intro + video control ---------- */
+  var hero=document.getElementById('mtl-hero');
+  var video=document.getElementById('mtl-hero-video');
+  var vidBtn=document.getElementById('mtl-vidctl');
+  function startIntro(){ if(!hero.classList.contains('mtl-loaded')) hero.classList.add('mtl-loaded'); }
+  if(video){
+    video.addEventListener('playing',startIntro,{once:true});
+    if(reduce){ video.removeAttribute('autoplay'); video.pause(); }
+  }
+  setTimeout(startIntro,900); /* never wait longer than this for the video */
+  vidBtn.addEventListener('click',function(){
+    var paused=video.paused;
+    if(paused){ video.play(); } else { video.pause(); }
+    vidBtn.setAttribute('aria-pressed',String(!paused));
+    vidBtn.querySelector('span').textContent=paused?'Pause film':'Play film';
+    vidBtn.querySelector('svg').innerHTML=paused
+      ?'<rect x="3" y="2" width="2.6" height="10"/><rect x="8.4" y="2" width="2.6" height="10"/>'
+      :'<path d="M3 2l9 5-9 5z"/>';
+  });
+
+  /* ---------- reveal on scroll ---------- */
+  var items=root.querySelectorAll('[data-mtl-reveal]');
+  if(hasIO && !reduce){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('mtl-in'); io.unobserve(e.target); } });
+    },{threshold:.18,rootMargin:'0px 0px -6% 0px'});
+    items.forEach(function(el){ io.observe(el); });
+  } else { items.forEach(function(el){ el.classList.add('mtl-in'); }); }
+
+  /* ---------- counters ---------- */
+  function runCount(el){
+    var end=parseInt(el.getAttribute('data-mtl-count'),10), suf=el.getAttribute('data-mtl-suffix')||'', start=null, dur=1600;
+    function step(t){ if(!start) start=t; var p=Math.min((t-start)/dur,1); el.textContent=Math.round(end*(1-Math.pow(1-p,3)))+(p===1?suf:''); if(p<1) requestAnimationFrame(step); }
+    el.textContent='0'; requestAnimationFrame(step);
+  }
+  if(hasIO && !reduce){
+    var co=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ runCount(e.target); co.unobserve(e.target); } });
+    },{threshold:.6});
+    root.querySelectorAll('[data-mtl-count]').forEach(function(c){ co.observe(c); });
+  }
+
+  /* ---------- craft: sticky image follows the active step ---------- */
+  var steps=root.querySelectorAll('.mtl-craft-step');
+  var figs=root.querySelectorAll('.mtl-craft-media figure');
+  var bars=root.querySelectorAll('.mtl-craft-progress span');
+  function setCraft(i){
+    steps.forEach(function(s,k){ s.classList.toggle('mtl-active',k===i); });
+    figs.forEach(function(f,k){ f.classList.toggle('mtl-active',k===i); });
+    bars.forEach(function(b,k){ b.classList.toggle('mtl-on',k<=i); });
+  }
+  if(hasIO){
+    var so=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ setCraft(Array.prototype.indexOf.call(steps,e.target)); } });
+    },{rootMargin:'-45% 0px -45% 0px'});
+    steps.forEach(function(s){ so.observe(s); });
+  }
+
+  /* ---------- beverage tiers: auto-cycling stepper ---------- */
+  var tierList=document.getElementById('mtl-tiers');
+  var tiers=tierList.querySelectorAll('.mtl-tier');
+  var desc=document.getElementById('mtl-tier-desc');
+  var count=document.getElementById('mtl-tier-count');
+  var panel=document.getElementById('mtl-tier-panel');
+  var current=0;
+  function selectTier(i,focus){
+    current=(i+tiers.length)%tiers.length;
+    tiers.forEach(function(t,k){
+      var on=k===current;
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex=on?0:-1;
+      t.classList.toggle('mtl-done',k<current);
+      /* restart the timer animation */
+      var tm=t.querySelector('.mtl-tier-timer'); tm.style.display='none'; void tm.offsetWidth; tm.style.display='';
+    });
+    tierList.style.setProperty('--mtl-tier-p',current/(tiers.length-1));
+    panel.setAttribute('aria-labelledby',tiers[current].id);
+    desc.classList.add('mtl-swap');
+    setTimeout(function(){
+      desc.textContent=tiers[current].getAttribute('data-mtl-desc');
+      count.textContent='Package '+(current+1)+' of '+tiers.length;
+      desc.classList.remove('mtl-swap');
+    },reduce?0:280);
+    if(focus) tiers[current].focus();
+  }
+  tiers.forEach(function(t,k){
+    t.addEventListener('click',function(){ selectTier(k); });
+    t.querySelector('.mtl-tier-timer').addEventListener('animationend',function(){ if(k===current && !reduce) selectTier(current+1); });
+    t.addEventListener('keydown',function(ev){
+      if(ev.key==='ArrowRight'||ev.key==='ArrowDown'){ ev.preventDefault(); selectTier(current+1,true); }
+      if(ev.key==='ArrowLeft'||ev.key==='ArrowUp'){ ev.preventDefault(); selectTier(current-1,true); }
+      if(ev.key==='Home'){ ev.preventDefault(); selectTier(0,true); }
+      if(ev.key==='End'){ ev.preventDefault(); selectTier(tiers.length-1,true); }
+    });
+  });
+  tierList.addEventListener('mouseenter',function(){ tierList.classList.add('mtl-paused'); });
+  tierList.addEventListener('mouseleave',function(){ tierList.classList.remove('mtl-paused'); });
+  tierList.addEventListener('focusin',function(){ tierList.classList.add('mtl-paused'); });
+  tierList.addEventListener('focusout',function(){ tierList.classList.remove('mtl-paused'); });
+  if(hasIO){
+    tierList.classList.add('mtl-offscreen');
+    new IntersectionObserver(function(entries){
+      tierList.classList.toggle('mtl-offscreen',!entries[0].isIntersecting);
+    },{threshold:.4}).observe(tierList);
+  }
+
+  /* ---------- testimonials: infinite rows that react to scroll speed ---------- */
+  var tracks=[].slice.call(root.querySelectorAll('.mtl-testi-track'));
+  var testi=document.getElementById('mtl-testi');
+  var testiOn=false, lastY=window.pageYOffset, vel=0, lastT=performance.now();
+  var state=tracks.map(function(tr){
+    var set=tr.querySelector('.mtl-testi-set');
+    for(var n=0;n<2;n++){ var c=set.cloneNode(true); c.setAttribute('aria-hidden','true'); c.querySelectorAll('a,button').forEach(function(x){x.tabIndex=-1;}); tr.appendChild(c); }
+    var s={el:tr,set:set,dir:parseFloat(tr.getAttribute('data-mtl-dir'))||1,x:0,w:0,hover:false,speed:1};
+    tr.addEventListener('mouseenter',function(){ s.hover=true; });
+    tr.addEventListener('mouseleave',function(){ s.hover=false; });
+    return s;
+  });
+  function measure(){ state.forEach(function(s){ s.w=s.set.offsetWidth; if(s.dir<0 && s.x===0) s.x=-s.w; }); }
+  measure(); window.addEventListener('resize',measure);
+  if(hasIO){ new IntersectionObserver(function(e){ testiOn=e[0].isIntersecting; },{rootMargin:'100px'}).observe(testi); }
+  var skew=0;
+  function loop(t){
+    var dt=Math.min((t-lastT)/1000,.05); lastT=t;
+    var y=window.pageYOffset, dy=y-lastY; lastY=y;
+    vel+= ((dt>0?dy/dt:0) - vel)*.12;              /* smoothed scroll velocity, px/s */
+    if(testiOn && !reduce){
+      var boost=Math.min(Math.abs(vel)*.5,700);
+      skew+= ((Math.max(Math.min(vel*.006,5),-5)) - skew)*.1;
+      state.forEach(function(s){
+        s.speed+= ((s.hover?0:1) - s.speed)*.08;    /* ease to a stop on hover */
+        var v=(38+boost)*s.speed*(vel<-20?-1:1);       /* scrolling up reverses the flow */
+        s.x-= v*s.dir*dt;
+        if(s.w){ while(s.x<=-s.w) s.x+=s.w; while(s.x>0) s.x-=s.w; }
+        s.el.style.transform='translate3d('+s.x.toFixed(2)+'px,0,0) skewX('+(-skew*s.dir).toFixed(2)+'deg)';
+      });
+    }
+    requestAnimationFrame(loop);
+  }
+  if(!reduce) requestAnimationFrame(loop);
+
+  /* ---------- parallax, floating CTA ---------- */
+  var heroMedia=document.getElementById('mtl-hero-media');
+  var heroInner=document.getElementById('mtl-hero-inner');
+  var bevMedia=document.getElementById('mtl-bev-media');
+  var floatBtn=document.getElementById('mtl-float');
+  var inquire=document.getElementById('mtl-inquire');
+  var ticking=false;
+  function onScroll(){
+    var vh=window.innerHeight, hr=hero.getBoundingClientRect();
+    if(!reduce && hr.bottom>0){
+      var p=Math.min(Math.max(-hr.top/hr.height,0),1);
+      heroMedia.style.transform='translate3d(0,'+(p*18)+'%,0)';
+      heroInner.style.opacity=String(1-p*1.4);
+      heroInner.style.transform='translate3d(0,'+(p*-60)+'px,0)';
+      if(video){ if(p>.95 && !video.paused) video.pause(); else if(p<.9 && video.paused && vidBtn.getAttribute('aria-pressed')==='false') video.play().catch(function(){}); }
+    }
+    if(!reduce && bevMedia){
+      var br=bevMedia.parentNode.getBoundingClientRect();
+      if(br.top<vh && br.bottom>0){ bevMedia.style.transform='translate3d(0,'+(((br.top+br.height/2-vh/2)/vh)*-10)+'%,0)'; }
+    }
+    var ir=inquire.getBoundingClientRect();
+    floatBtn.classList.toggle('mtl-show', hr.bottom<0 && ir.top>vh*.6);
+    ticking=false;
+  }
+  window.addEventListener('scroll',function(){ if(!ticking){ ticking=true; requestAnimationFrame(onScroll); } },{passive:true});
+  window.addEventListener('resize',onScroll);
+  onScroll();
+
+  /* ---------- smooth anchor to form ---------- */
+  root.querySelectorAll('a[href="#mtl-inquire"]').forEach(function(a){
+    a.addEventListener('click',function(ev){
+      ev.preventDefault();
+      inquire.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});
+      setTimeout(function(){ document.getElementById('mtl-name').focus({preventScroll:true}); },reduce?0:800);
+    });
+  });
+
+  /* ---------- form ---------- */
+  var typeSel=document.getElementById('mtl-type');
+  var otherWrap=document.getElementById('mtl-other-wrap');
+  typeSel.addEventListener('change',function(){
+    var on=typeSel.value==='Other';
+    otherWrap.classList.toggle('mtl-show',on);
+    if(on) document.getElementById('mtl-other').focus();
+  });
+  document.getElementById('mtl-date').min=new Date().toISOString().split('T')[0];
+  var form=document.getElementById('mtl-form');
+  form.addEventListener('submit',function(ev){
+    var ok=true, first=null;
+    form.querySelectorAll('[required]').forEach(function(f){
+      var wrap=f.closest('.mtl-field');
+      var valid=f.value.trim()!=='' && (f.type!=='email' || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.value.trim()));
+      wrap.classList.toggle('mtl-err',!valid);
+      f.setAttribute('aria-invalid',valid?'false':'true');
+      if(!valid){ ok=false; if(!first) first=f; }
+    });
+    if(!ok){ ev.preventDefault(); first.focus(); return; }
+    if(form.getAttribute('action')==='#'){
+      ev.preventDefault();
+      form.style.display='none';
+      var s=document.getElementById('mtl-success'); s.style.display='block'; s.focus();
+    }
+  });
+  form.querySelectorAll('[required]').forEach(function(f){
+    f.addEventListener('input',function(){ f.closest('.mtl-field').classList.remove('mtl-err'); });
+  });
+})();
+</script>
+<!-- ======================= END MUTTCH LOUNGE ======================= -->
+
+</body>
+</html>
